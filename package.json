@@ -13,6 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/Ferfalk/prettier-config.git"
   },
+  "keywords": [
+    "prettier",
+    "prettier-config",
+    "prettierconfig"
+  ],
   "author": "Fernando A. H. Falkiewicz <fernandoahf@gmail.com>",
   "license": "MIT",
   "bugs": {
