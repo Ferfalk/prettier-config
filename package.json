@@ -1,0 +1,44 @@
+{
+  "name": "@ferfalk/prettier-config",
+  "version": "0.0.0",
+  "description": "Shared Prettier configuration",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "commit": "git-cz",
+    "prepare": "husky install",
+    "version": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s && git add CHANGELOG.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ferfalk/prettier-config.git"
+  },
+  "author": "Fernando A. H. Falkiewicz <fernandoahf@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ferfalk/prettier-config/issues"
+  },
+  "homepage": "https://github.com/Ferfalk/prettier-config#readme",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "prettier": "./index.js",
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.2",
+    "@commitlint/config-conventional": "^18.4.2",
+    "@commitlint/cz-commitlint": "^18.4.2",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-cli": "^4.1.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.1.0"
+  }
+}
