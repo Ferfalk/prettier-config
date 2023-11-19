@@ -1,16 +1,18 @@
 /** @type {import('prettier').Config} */
 const config = {
   $schema: 'http://json.schemastore.org/prettierrc',
-  endOfLine: 'auto',
+  experimentalTernaries: false,
+  printWidth: 120,
   tabWidth: 2,
   useTabs: false,
   semi: true,
+  singleQuote: true,
+  quoteProps: "as-needed",
+  trailingComma: 'all',
   bracketSpacing: true,
   bracketSameLine: true,
-  arrowParens: 'avoid',
-  trailingComma: 'all',
-  singleQuote: true,
-  printWidth: 120,
+  arrowParens: 'always',
+  endOfLine: 'auto',
 };
 
 export default config;
